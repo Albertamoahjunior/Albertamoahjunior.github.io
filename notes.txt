@@ -1,0 +1,8 @@
+https://politix.cwsthemes.com/wp-content/plugins/revslider/public/assets/assets/dummy.png  --first 
+https://politix.cwsthemes.com/wp-content/uploads/2019/07/bg_header-1-100x50.jpg" --second  ;; https://politix.cwsthemes.com/wp-content/uploads/2019/07/bg_header-1.jpg ;; https://politix.cwsthemes.com/wp-content/uploads/2019/07/stars.png
+https://politix.cwsthemes.com/wp-content/uploads/2019/09/h1_slide2-100x50.jpg --third ; second slide ;; https://politix.cwsthemes.com/wp-content/uploads/2019/09/h1_slide2.jpg
+https://politix.cwsthemes.com/wp-content/uploads/2019/09/h1_slide3.jpg --fourth ; third slide
+
+
+//icons
+i class='woo_mini-count flaticon-shopcart-icon'></i
