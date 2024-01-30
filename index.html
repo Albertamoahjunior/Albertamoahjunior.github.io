@@ -833,7 +833,8 @@
         let textintro = document.getElementById("intro-text")
 
         if(screen_height <= 940 || screen_width <= 440){
-            new_screen.setAttribute("data-bg-image", "assets/img/enhanced-small.png");
+            //new_screen.setAttribute("data-bg-image", "assets/img/enhanced-small.png");
+            new_screen.removeAttribute("data-bg-image");
             title.setAttribute("style", "color : white");
             textintro.setAttribute("style", "color : black; font-weight:800");
         }
