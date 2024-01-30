@@ -56,9 +56,9 @@
             <div class="container align-self-center align-items-center">
                 <div class="row">
                     <div class="col-md-6">
-                        <h1 data-animate="ts-fadeInUp">Welcome to <br>PeacePurposePaid</h1>
+                        <h1 id= "title-intro" data-animate="ts-fadeInUp">Welcome to <br>PeacePurposePaid</h1>
                         <div data-animate="ts-fadeInUp" data-delay=".1s">
-                            <p class="w-75 mb-5 ts-opacity__50">Embark on a transformative journey with Dr. Chanita Foster, your dedicated guide to mastering your inner peace, unlocking the profound understanding of your life's purpose, and cultivating the skills to not just earn but thrive financially.</p>
+                            <p id = "intro-text" class="w-75 mb-5 ts-opacity__50">Embark on a transformative journey with Dr. Chanita Foster, your dedicated guide to mastering your inner peace, unlocking the profound understanding of your life's purpose, and cultivating the skills to not just earn but thrive financially.</p>
                         </div>
                         <a href="#how-can-i-help-you" class="btn btn-primary btn-lg ts-scroll mr-4" data-animate="ts-fadeInUp" data-delay=".2s">
                             Learn More
@@ -829,10 +829,13 @@
         let screen_height = parseInt(window.innerHeight);
         let screen_width = parseInt(window.innerWidth)
         let new_screen = document.getElementById('woman-face');
+        let title = document.getElementById("title-intro");
+        let textintro = document.getElementById("intro-text")
 
-        if(screen_height <= 940 && screen_width <= 440){
-            console.log(new_screen)
-            new_screen.setAttribute("data-bg-image", "assets/img/bg-woman.png");
+        if(screen_height <= 940 || screen_width <= 440){
+            new_screen.setAttribute("data-bg-image", "assets/img/enhanced-small.png");
+            title.setAttribute("style", "color : white");
+            textintro.setAttribute("style", "color : black");
         }
     </script>
 
