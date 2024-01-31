@@ -57,9 +57,9 @@
             <div class="container align-self-center align-items-center">
                 <div class="row">
                     <div class="col-md-6">
-                        <h1 id= "title-intro" data-animate="ts-fadeInUp">Welcome to <br>PeacePurposePaid</h1>
+                        <h1 id= "title-intro" data-animate="ts-fadeInUp"><span class="ph-black">Wel</span>come to <br><span class="ph-black">Pea</span>cePurposePaid</h1>
                         <div data-animate="ts-fadeInUp" data-delay=".1s">
-                            <p id = "intro-text" class="w-75 mb-5 ts-opacity__50">Embark on a transformative journey with Dr. Chanita Foster, your dedicated guide to mastering your inner peace, unlocking the profound understanding of your life's purpose, and cultivating the skills to not just earn but thrive financially.</p>
+                            <p id = "intro-text" class="w-75 mb-5 ts-opacity__90"><h3>Embark on a transformative journey with Dr. Chanita Foster, your dedicated guide to mastering your inner peace, unlocking the profound understanding of your life's purpose, and cultivating the skills to not just earn but thrive financially.</h3></p>
                         </div>
                         <a href="#how-can-i-help-you" class="btn btn-primary btn-lg ts-scroll mr-4" data-animate="ts-fadeInUp" data-delay=".2s">
                             Learn More
@@ -831,13 +831,20 @@
         let screen_width = parseInt(window.innerWidth)
         let new_screen = document.getElementById('woman-face');
         let title = document.getElementById("title-intro");
-        let textintro = document.getElementById("intro-text")
+        let textintro = document.getElementById("intro-text");
+        let verti_text = document.getElementsByClassName("ph-black");
 
         if(screen_height <= 940 || screen_width <= 440){
-            //new_screen.setAttribute("data-bg-image", "assets/img/enhanced-small.png");
-            new_screen.removeAttribute("data-bg-image");
-            title.setAttribute("style", "color : black");
-            textintro.setAttribute("style", "color : black; font-weight:800");
+            new_screen.setAttribute("data-bg-image", "assets/img/enhanced-small.png");
+            
+            for(let i = 0; i < verti_text.length; i++){
+                 verti_text[i].setAttribute("style", "color: black");
+            }
+           
+            //new_screen.removeAttribute("data-bg-image");
+            title.setAttribute("style", "color : white");
+            textintro.setAttribute("style", "color : blue");
+            console.log(textintro)
         }
     </script>
 
